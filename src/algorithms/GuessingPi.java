@@ -5,6 +5,7 @@
  */
 
 	import javax.swing.JOptionPane;
+import javax.swing.text.AttributeSet.CharacterAttribute;
 
 	public class GuessingPi {
 	// 1. Make a main method and make sure your program can run
@@ -32,16 +33,16 @@
 		
 	}
 		// 5. Ask the user for the NEXT digit of pi.
-	JOptionPane.showInputDialog("Wat is the next digit of pi");
+	JOptionPane.showInputDialog("What is the next digit of pi");
 				
 		// 6. Compare the user's input to the next digit of your pi variable 
 				//    (look at step 3 for a clue).
 				//    HINT: use charAt(0) to get 1st char of user input String 
-
+	CharAt(0)
 					
 		// 7. If they are correct, print out "correct".
 
-		if (Correct) {
+		if () {
 			
 		}
 					// 8. If they are not, print out "incorrect" and tell them
