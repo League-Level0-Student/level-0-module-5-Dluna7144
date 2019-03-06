@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 public class Practice {
 	public static void main(String[] args) {
@@ -6,22 +7,53 @@ public class Practice {
 		for (int i = 0; i <=100; i++) {
 		System.out.println(i);
 		}
+		
 		System.out.println();
 		for (int i = 100; i >=0 ; i--) {
 		System.out.println(i);
 		}
+		
 		System.out.println();
 		for (int i = 2; i <=100; i++) {
+		if(i%2==0) {
 		System.out.println(i);
 		}
-	
+		} 
 		
+		System.out.println();
+		for (int i = 1; i<=99;i++) {
+		if(i%2==1) {
+		System.out.println(i);
+		}
+		}
 		
+		System.out.println();
+		for (int i = 1; i <=500; i++) {
+		System.out.print(i);
+		if (i%2==0) {
+		System.out.println("is even");	
+
+		}else {
+			System.out.println("is odd");	
+		}
+		}	
+		System.out.println();
+		for (int i = 0; i <=777; i++) {
+		if (i%7==0) {
+		System.out.println(i);	
+		}	
+		}
+		System.out.println();
+		for (int i = 2004; i <=2019; i++) {
+		System.out.println("In " + i +" i was "+(i-2004)+" years old");
 		
+			
 		
-		
+		}	
 		}
 	}
+
+	
 	//	The goal of this assignment is to make you a master of utilizing for loops. Complete all the for loop challenges on the paper. Please read each challenge carefully and make sure that your for loops display exactly what is asked. If you finish them all, try the bonus challenge.
 //
 //	Single For-Loops
