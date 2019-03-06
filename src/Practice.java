@@ -46,11 +46,10 @@ public class Practice {
 		System.out.println();
 		for (int i = 2004; i <=2019; i++) {
 		System.out.println("In " + i +" i was "+(i-2004)+" years old");
-		
-			
-		
 		}	
-		}
+		
+	
+	}
 	}
 
 	
