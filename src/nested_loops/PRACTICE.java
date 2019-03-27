@@ -3,10 +3,9 @@ package nested_loops;
 import javax.swing.JOptionPane;
 
 public class PRACTICE {
-	public class SkillPractice {
 		public static void main(String[] args) {
 
-		SkillPractice skills = new SkillPractice();
+		PRACTICE skills = new PRACTICE();
 		          	skills.skill1();
 		          	skills.skill2();
 		          	skills.skill3();
@@ -18,28 +17,33 @@ public class PRACTICE {
 		// Use pop-ups for the following.
 		// Ask the user how many dimes they have
 			String Dime=JOptionPane.showInputDialog("How many dimes do you have?");
-			int Cents=Integer.parseInt(Dimes);
-
+			int Cents=Integer.parseInt(Dime);
+			Cents=Cents*10;
 
 		// Tell them how many cents they have (hint multiply by 10)
- 
+			JOptionPane.showMessageDialog(null,"You have " + (Cents) + " cents");
 
 
 
 		// Ask the user how tall they are (inches)
-
+			String Height=JOptionPane.showInputDialog("How tall are you (inches)?");
+			int Wheaties=Integer.parseInt(Height);
 
 
 
 		// If they are shorter than 36 inches, tell them to eat their Wheaties
-
+			if (Wheaties<36) {
+			JOptionPane.showMessageDialog(null, " you better eat your wheaties..");
+			}
 
 
 
 		}
 
 		void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
-
+			for (int i = 0; i < 30; i=i+3) {
+				System.out.println(i);
+			}
 
 
 
@@ -49,8 +53,8 @@ public class PRACTICE {
 		}
 
 		void skill3() { // Get a random number that is less than 20 and print it to the console 
-
-
+			int Console = new Random().nextInt(20);
+			
 
 		// Get another random number that is less than 10 and print it to the console 
 
@@ -98,4 +102,4 @@ public class PRACTICE {
 
 		}
 		}
-}
+
