@@ -1,4 +1,6 @@
-package nested_loops;
+ package nested_loops;
+
+import java.util.Random;
 
 import javax.swing.JOptionPane;
 
@@ -43,8 +45,9 @@ public class PRACTICE {
 		void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
 			for (int i = 0; i < 30; i=i+3) {
 				System.out.println(i);
+				
 			}
-
+				
 
 
 
@@ -53,15 +56,19 @@ public class PRACTICE {
 		}
 
 		void skill3() { // Get a random number that is less than 20 and print it to the console 
-			int Console = new Random().nextInt(20);
-			
+			System.out.println();
+			int Number = new Random().nextInt(20);
+			System.out.println(Number);
 
 		// Get another random number that is less than 10 and print it to the console 
+			System.out.println();
+			int Ten = new Random().nextInt(10);
+			System.out.println(Ten);
 
 
 
 		// Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction 
-
+			JOptionPane.showMessageDialog(null,"The difference is " + (Number-Ten));
 
 
 		}
@@ -71,7 +78,10 @@ public class PRACTICE {
 
 
 		// If they answered "San Diego", tell them they live in America's Finest City 
-
+		String City=JOptionPane.showInputDialog("What city do you live in?");
+			 if (City.equals("San Diego")) {
+				JOptionPane.showMessageDialog(null,"You live in America's finest City");
+			}
 
 
 		// Otherwise, tell them to move to San Diego 
